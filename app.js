@@ -12,26 +12,15 @@ app.engine(
 		extname: ".hbs",
 	})
 );
-
 app.set("view engine", ".hbs");
-// app.set("views", path.join(__dirname, "views"));
+app.set("views", path.join(__dirname, "views"));
 
-app.use(express.static(path.join(__dirname, "assets")));
-
-app.get("/", (req, res) => {
-	res.render("layouts/main");
-});
+app.use(express.static("assets"));
 
 // Routes
+
+app.use("/", require("./routes/index"));
 app.use("/sip", sip);
-
-// router.get("/sip", (req, res) => {
-// 	res.render("sip");
-// });
-
-// app.get("/sip", (req, res) => {
-// 	res.render("sip.hbs");
-// });
 
 app.listen(5000, () => {
 	console.log("Listening on port " + 5000);
