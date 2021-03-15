@@ -4,7 +4,11 @@ const exphbs = require("express-handlebars");
 const sip = require("./routes/sip");
 const expense = require("./routes/expense");
 
+require("dotenv").config();
 const app = express();
+const PORT = process.env.PORT || 5000;
+
+// console.log(process.env);
 
 app.engine(
 	".hbs",
@@ -24,6 +28,6 @@ app.use("/", require("./routes/index"));
 app.use("/sip", sip);
 app.use("/expense", expense);
 
-app.listen(5000, () => {
+app.listen(PORT, () => {
 	console.log("Listening on port " + 5000);
 });
