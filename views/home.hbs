@@ -22,9 +22,9 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-12">
-                <nav class="navbar navbar-expand-lg">
-                    <a class="navbar-brand" href="index.html">
-                        <img src="img/logo/logo.svg" alt="Logo">
+                <nav class="navbar navbar-expand-lg id=" #mainnavbar">
+                    <a class="navbar-brand" href="#">
+                        <!-- <img src="img/logo/logo.svg" alt="Logo"> -->
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -46,20 +46,32 @@
                                 <a class="page-scroll" href="#services">Services</a>
                             </li>
                             <li class="nav-item">
-                                <a class="page-scroll" href="#portfolio">Portfolio</a>
+                                <a class="page-scroll" href="#blog">Blog</a>
                             </li>
                             <li class="nav-item">
-                                <a class="page-scroll" href="#team">Team</a>
+                                <a class="page-scroll" href="#news">News</a>
                             </li>
                             <li class="nav-item">
-                                <a class="page-scroll" href="#contact">Contact</a>
+                                <a class="page-scroll" href=" ">Survey</a>
                             </li>
                         </ul>
                         <div class="header-btn">
-                            <a href="javascript:void(0)" class="theme-btn">Get Started</a>
+                            <a href="javascript:void(0)" class="theme-btn">Login</a>
                         </div>
                     </div> <!-- navbar collapse -->
                 </nav> <!-- navbar -->
+                <script>
+
+                    $(function () {
+                        $(document).scroll(function () {
+
+                            var $nav = $('#mainNavbar');
+
+                            $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+
+                        });
+                    });
+                </script>
             </div>
         </div> <!-- row -->
     </div> <!-- container -->
@@ -67,43 +79,35 @@
 </header>
 <!-- ========================= header end ========================= -->
 
-<!-- ========================= carousel-section end ========================= -->
+<!-- ========================= carousel-section  ========================= -->
 <section id="home" class="carousel-section-wrapper">
     <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-section carousel-item active clip-bg pt-225 pb-200 img-bg"
-                style="background-image: url('img/carousel/1.jpg');">
+                style="background-image: url('img/carousel/3.jpg');">
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-8 col-lg-10 mx-auto">
                             <div class="carousel-content text-center">
                                 <div class="section-title">
-                                    <h2 class="text-white">Bootstrap 5 One Page Template</h2>
-                                    <p class="text-white">We Crafted an awesome design library that is
-                                        robust and intuitive to use. No matter you're building a business
-                                        presentation
-                                        websit or a complex web application our design blocks can easily be
-                                        adapted for your needs.</p>
+                                    <h2 class="text-white"></h2>
+                                    <p class="text-white"></p>
                                 </div>
-                                <a href="javascript:void(0)" class="theme-btn border-btn">Read More</a>
+                                <!-- <a href="javascript:void(0)" class="theme-btn border-btn">Read More</a> -->
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="carousel-section carousel-item clip-bg pt-225 pb-200 img-bg"
-                style="background-image: url('img/carousel/2.jpg');">
+                style="background-image: url('img/carousel/women-empowerment.jpg');">
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-8 col-lg-10 mx-auto">
                             <div class="carousel-content text-center">
                                 <div class="section-title">
-                                    <h2 class="text-white">Get Started with Mighty Bootstrap 5</h2>
-                                    <p class="text-white">Create Stunning Websites in Easier
-                                        and Effecient Way! No matter you're building a business
-                                        presentation websit or a complex web application our design blocks can
-                                        easily be
-                                        adapted for your needs.</p>
+                                    <h2 class="text-black">Get Inspired</h2>
+                                    <p class="text-white"></p>
                                 </div>
                                 <a href="javascript:void(0)" class="theme-btn border-btn">Read More</a>
                             </div>
@@ -134,8 +138,9 @@
                 <div class="section-title text-center mb-55">
                     <span class="wow fadeInDown" data-wow-delay=".2s">Features</span>
                     <h2 class="wow fadeInUp" data-wow-delay=".4s">Why Choose?</h2>
-                    <p class="wow fadeInUp" data-wow-delay=".6s">At vero eos et accusamus et iusto odio dignissimos
-                        ducimus quiblanditiis praesentium</p>
+                    <p class="wow fadeInUp" data-wow-delay=".6s">A women-centric organisation to revolutionize the lives
+                        of young women from weak socio-economic backgrounds to develop and employ the future financial
+                        leaders of India</p>
                 </div>
             </div>
         </div>
@@ -144,36 +149,35 @@
             <div class="col-lg-4 col-md-6">
                 <div class="feature-box box-style">
                     <div class="feature-icon box-icon-style">
-                        <i class="lni lni-layers"></i>
+                        <i class="fas fa-project-diagram"></i>
                     </div>
                     <div class="box-content-style feature-content">
-                        <h4>Bootstrap 5</h4>
-                        <p>Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy eirmod tempor ividunt
-                            labor dolore magna.</p>
+                        <h4>Our Mission</h4>
+                        <p>Educating the womenfolk masses and encouraging better financial literacy to bring forward
+                            financial instruments as a tool for self and the country's development.</p>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="feature-box box-style">
                     <div class="feature-icon box-icon-style">
-                        <i class="lni lni-brush-alt"></i>
+                        <i class="fas fa-chart-pie"></i>
                     </div>
                     <div class="box-content-style feature-content">
-                        <h4>Awesome Design</h4>
-                        <p>Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy eirmod tempor ividunt
-                            labor dolore magna.</p>
+                        <h4>Our PLan</h4>
+                        <p>content</p>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="feature-box box-style">
                     <div class="feature-icon box-icon-style">
-                        <i class="lni lni-pointer-up"></i>
+                        <i class="fas fa-chart-line"></i>
                     </div>
                     <div class="box-content-style feature-content">
-                        <h4>One-page Template</h4>
-                        <p>Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy eirmod tempor ividunt
-                            labor dolore magna.</p>
+                        <h4>Our Vision</h4>
+                        <p>Creating an era of strong, young women to lead and develop India into becoming a superpower
+                            while employing and hereby empowering women!</p>
                     </div>
                 </div>
             </div>
@@ -190,11 +194,11 @@
                 <div class="col-xl-6 col-lg-6">
                     <div class="about-img-wrapper">
                         <div class="about-img position-relative d-inline-block wow fadeInLeft" data-wow-delay=".3s">
-                            <img src="img/about/about-img.png" alt="">
+                            <img src="img/about/tat.png" alt="">
 
-                            <div class="about-experience">
-                                <h3>5 Year Of Working Experience</h3>
-                                <p>We Crafted an aweso design library that is robust and intuitive to use.</p>
+                            <div class="about-experience p-3">
+                                <h3>A women centric project</h3>
+                                <p></p>
                             </div>
                         </div>
                     </div>
@@ -203,31 +207,24 @@
                     <div class="about-content-wrapper">
                         <div class="section-title">
                             <span class="wow fadeInUp" data-wow-delay=".2s">About Us</span>
-                            <h2 class="mb-40 wow fadeInRight" data-wow-delay=".4s">Built-With Boostrap 5, a New
-                                Experiance</h2>
+                            <h2 class="mb-40 wow fadeInRight" data-wow-delay=".4s">A women-centric organisation </h2>
                         </div>
                         <div class="about-content">
-                            <p class="mb-45 wow fadeInUp" data-wow-delay=".6s">We Crafted an awesome design library
-                                that is robust and intuitive to use. No matter you're building a business
-                                presentation websit or a complex web application our design</p>
-                            <div class="counter-up wow fadeInUp" data-wow-delay=".5s">
-                                <div class="counter">
-                                    <span id="secondo" class="countup count color-1" cup-end="30"
-                                        cup-append="k">10</span>
-                                    <h4>Happy Client</h4>
-                                    <p>We Crafted an awesome design <br class="d-none d-md-block d-lg-none d-xl-block">
-                                        library that is robust
-                                        and</p>
-                                </div>
-                                <div class="counter">
-                                    <span id="secondo" class="countup count color-2" cup-end="42"
-                                        cup-append="k">5</span>
-                                    <h4>Project Done</h4>
-                                    <p>We Crafted an awesome design <br class="d-none d-md-block d-lg-none d-xl-block">
-                                        library that is robust
-                                        and</p>
-                                </div>
-                            </div>
+                            <p class="mb-45 wow fadeInUp" data-wow-delay=".6s">Educating the womenfolk masses and
+                                encouraging better financial literacy to bring forward financial instruments as a tool
+                                for self and the country's development</p>
+                            <!-- <div class="counter-up wow fadeInUp" data-wow-delay=".5s">
+                                        <div class="counter">
+                                            <span id="secondo" class="countup count color-1" cup-end="30" cup-append="k"></span>
+                                            <h4>Happy Client</h4>
+                                            <p>We Crafted an awesome design <br class="d-none d-md-block d-lg-none d-xl-block"> library that is robust and</p>
+                                        </div>
+                                        <div class="counter">
+                                            <span id="secondo" class="countup count color-2" cup-end="42" cup-append="k"></span>
+                                            <h4>Project Done</h4>
+                                            <p>We Crafted an awesome design <br class="d-none d-md-block d-lg-none d-xl-block"> library that is robust and</p>
+                                        </div>
+                                    </div> -->
                         </div>
                     </div>
                 </div>
@@ -245,8 +242,7 @@
                 <div class="section-title text-center mb-55">
                     <span class="wow fadeInDown" data-wow-delay=".2s">Services</span>
                     <h2 class="wow fadeInUp" data-wow-delay=".4s">Our Best Services</h2>
-                    <p class="wow fadeInUp" data-wow-delay=".6s">At vero eos et accusamus et iusto odio
-                        dignissimos ducimus quiblanditiis praesentium</p>
+                    <p class="wow fadeInUp" data-wow-delay=".6s"></p>
                 </div>
             </div>
         </div>
@@ -255,14 +251,13 @@
             <div class="col-lg-4 col-md-6">
                 <div class="service-box box-style">
                     <div class="service-icon box-icon-style">
-                        <i class="lni lni-leaf"></i>
+                        <i class="fas fa-calculator"></i>,
                     </div>
                     <div class="box-content-style service-content">
                         <a href="/sip">
-                            <h4 id="servicetext">Clean & Refreshing</h4>
+                            <h4 id="servicetext">SIP</h4>
                         </a>
-                        <p>Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy eirmod tempor ividunt
-                            labor dolore magna.</p>
+                        <p>content</p>
                     </div>
                 </div>
             </div>
@@ -272,9 +267,10 @@
                         <i class="lni lni-bootstrap"></i>
                     </div>
                     <div class="box-content-style service-content">
-                        <h4>Solid Bootstrap 5</h4>
-                        <p>Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy eirmod tempor ividunt
-                            labor dolore magna.</p>
+                        <a href="https://en.wikipedia.org/wiki/Wikipedia">
+                            <h4 id="servicetext">stock</h4>
+                        </a>
+                        <p>content</p>
                     </div>
                 </div>
             </div>
@@ -284,75 +280,76 @@
                         <i class="lni lni-briefcase"></i>
                     </div>
                     <div class="box-content-style service-content">
-                        <h4>Crafted for Business</h4>
-                        <p>Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy eirmod tempor ividunt
-                            labor dolore magna.</p>
+                        <a href="https://en.wikipedia.org/wiki/Wikipedia">
+                            <h4 id="servicetext">Expense tracker</h4>
+                        </a>
+                        <p>content</p>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="service-box box-style">
-                    <div class="service-icon box-icon-style">
-                        <i class="lni lni-bolt"></i>
-                    </div>
-                    <div class="box-content-style service-content">
-                        <h4>Speed Optimized</h4>
-                        <p>Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy eirmod tempor ividunt
-                            labor dolore magna.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="service-box box-style">
-                    <div class="service-icon box-icon-style">
-                        <i class="lni lni-infinite"></i>
-                    </div>
-                    <div class="box-content-style service-content">
-                        <h4>Fully Customizable</h4>
-                        <p>Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy eirmod tempor ividunt
-                            labor dolore magna.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="service-box box-style">
-                    <div class="service-icon box-icon-style">
-                        <i class="lni lni-reload"></i>
-                    </div>
-                    <div class="box-content-style service-content">
-                        <h4>Regular Updates</h4>
-                        <p>Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy eirmod tempor ividunt
-                            labor dolore magna.</p>
-                    </div>
-                </div>
-            </div>
+            <!-- <div class="col-lg-4 col-md-6">
+                        <div class="service-box box-style">
+                            <div class="service-icon box-icon-style">
+                                <i class="lni lni-bolt"></i>
+                            </div>
+                            <div class="box-content-style service-content">
+                                <h4>Speed Optimized</h4>
+                                <p>Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy eirmod tempor ividunt
+                                    labor dolore magna.</p>
+                            </div>
+                        </div>
+                    </div> -->
+            <!-- <div class="col-lg-4 col-md-6">
+                        <div class="service-box box-style">
+                            <div class="service-icon box-icon-style">
+                                <i class="lni lni-infinite"></i>
+                            </div>
+                            <div class="box-content-style service-content">
+                                <h4>Fully Customizable</h4>
+                                <p>Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy eirmod tempor ividunt
+                                    labor dolore magna.</p>
+                            </div>
+                        </div>
+                    </div> -->
+            <!-- <div class="col-lg-4 col-md-6">
+                        <div class="service-box box-style">
+                            <div class="service-icon box-icon-style">
+                                <i class="lni lni-reload"></i>
+                            </div>
+                            <div class="box-content-style service-content">
+                                <h4>Regular Updates</h4>
+                                <p>Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy eirmod tempor ividunt
+                                    labor dolore magna.</p>
+                            </div>
+                        </div>
+                    </div> -->
         </div>
     </div>
 </section>
 <!-- ========================= service-section end ========================= -->
 
-<!-- ========================= portfolio-section start ========================= -->
+<!-- ========================= Blog-section start ========================= -->
 <section id="portfolio" class="portfolio-section pt-130">
-    <section id="team" class="contact-section cta-bg img-bg pt-110 pb-100"
-        style="background-image: url('img/bg/cta-bg.jpg');">
+    <section id="blog" class="contact-section cta-bg img-bg pt-110 pb-100"
+        style="background-image: url('img/bg/img-01.png');">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-xl-5 col-lg-7">
                     <div class="section-title mb-60">
                         <span class="text-white wow fadeInDown" data-wow-delay=".2s"
-                            style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInDown;">Hey</span>
+                            style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInDown;">BLOG</span>
                         <h2 class="text-white wow fadeInUp" data-wow-delay=".4s"
-                            style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">You are
-                            using free lite version of Fancy</h2>
-                        <p class="text-white wow fadeInUp" data-wow-delay=".6s"
-                            style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">Please,
-                            purchase full version of template to get all elements, section and permission to remove
-                            credits.</p>
+                            style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;"></h2>
+                        <p class="text-white wow fadeInUp mb-4" data-wow-delay=".6s"
+                            style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">Education on
+                            your hands at the touch of a button, free and extensive, personlised for your profile</p>
+                        <a href="https://rebrand.ly/fancy-ud" rel="nofollow" class="theme-btn">Purchase Now</a>
+
                     </div>
                 </div>
                 <div class="col-xl-7 col-lg-5">
                     <div class="contact-btn text-left text-lg-right">
-                        <a href="https://rebrand.ly/fancy-ud" rel="nofollow" class="theme-btn">Purchase Now</a>
+
                     </div>
                 </div>
             </div>
@@ -391,7 +388,7 @@
                         <div class="col-lg-2"></div>
                         <div class="col-lg-5">
                             <div class="timeline-img">
-                                <img src="img/timeline/timeline-1.png" alt="">
+                                <img src="img/timeline/p.png" alt="">
                             </div>
                         </div>
                     </div>
@@ -402,7 +399,7 @@
                     <div class="row align-items-center">
                         <div class="col-lg-5">
                             <div class="timeline-img">
-                                <img src="img/timeline/timeline-2.png" alt="">
+                                <img src="img/timeline/s.jpg" alt="">
                             </div>
                         </div>
                         <div class="col-lg-2"></div>
@@ -435,7 +432,7 @@
                         <div class="col-lg-2"></div>
                         <div class="col-lg-5">
                             <div class="timeline-img">
-                                <img src="img/timeline/timeline-3.png" alt="">
+                                <img src="img/timeline/a.png" alt="">
                             </div>
                         </div>
                     </div>
@@ -446,7 +443,7 @@
                     <div class="row align-items-center">
                         <div class="col-lg-5">
                             <div class="timeline-img">
-                                <img src="img/timeline/timeline-4.png" alt="">
+                                <img src="img/timeline/hi.jpg" alt="">
                             </div>
                         </div>
                         <div class="col-lg-2"></div>
@@ -469,68 +466,61 @@
 <!-- ========================= process-section end ========================= -->
 
 <!-- ========================= team-section start ========================= -->
-<section id="team" class="contact-section cta-bg img-bg pt-110 pb-100"
-    style="background-image: url('img/bg/cta-bg.jpg');">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-xl-5 col-lg-7">
-                <div class="section-title mb-60">
-                    <span class="text-white wow fadeInDown" data-wow-delay=".2s"
-                        style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInDown;">Hey</span>
-                    <h2 class="text-white wow fadeInUp" data-wow-delay=".4s"
-                        style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">You are using
-                        free lite version of Fancy</h2>
-                    <p class="text-white wow fadeInUp" data-wow-delay=".6s"
-                        style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">Please,
-                        purchase full version of template to get all elements, section and permission to remove
-                        credits.</p>
+<!-- <section id="team" class="contact-section cta-bg img-bg pt-110 pb-100" style="background-image: url('img/bg/cta-bg.jpg');">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-5 col-lg-7">
+                        <div class="section-title mb-60">
+                            <span class="text-white wow fadeInDown" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInDown;">Hey</span>
+                            <h2 class="text-white wow fadeInUp" data-wow-delay=".4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">You are using free lite version of Fancy</h2>
+                            <p class="text-white wow fadeInUp" data-wow-delay=".6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">Please, purchase full version of template to get all elements, section and permission to remove credits.</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-7 col-lg-5">
+                        <div class="contact-btn text-left text-lg-right">
+                            <a href="https://rebrand.ly/fancy-ud" rel="nofollow" class="theme-btn">Purchase Now</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-xl-7 col-lg-5">
-                <div class="contact-btn text-left text-lg-right">
-                    <a href="https://rebrand.ly/fancy-ud" rel="nofollow" class="theme-btn">Purchase Now</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+        </section> -->
 <!-- ========================= team-section end ========================= -->
 
 <!-- ========================= client-logo-section start ========================= -->
-<section class="client-logo-section pt-100 pb-100">
-    <div class="container">
-        <div class="client-logo-wrapper">
-            <div class="client-logo-carousel d-flex align-items-center justify-content-between">
-                <div class="client-logo">
-                    <img src="img/client-logo/uideck-logo.svg" alt="">
-                </div>
-                <div class="client-logo">
-                    <img src="img/client-logo/pagebulb-logo.svg" alt="">
-                </div>
-                <div class="client-logo">
-                    <img src="img/client-logo/lineicons-logo.svg" alt="">
-                </div>
-                <div class="client-logo">
-                    <img src="img/client-logo/graygrids-logo.svg" alt="">
-                </div>
-                <div class="client-logo">
-                    <img src="img/client-logo/lineicons-logo.svg" alt="">
+<!-- <section class="client-logo-section pt-100 pb-100">
+            <div class="container">
+                <div class="client-logo-wrapper">
+                    <div class="client-logo-carousel d-flex align-items-center justify-content-between">
+                        <div class="client-logo">
+                            <img src="img/client-logo/uideck-logo.svg" alt="">
+                        </div>
+                        <div class="client-logo">
+                            <img src="img/client-logo/pagebulb-logo.svg" alt="">
+                        </div>
+                        <div class="client-logo">
+                            <img src="img/client-logo/lineicons-logo.svg" alt="">
+                        </div>
+                        <div class="client-logo">
+                            <img src="img/client-logo/graygrids-logo.svg" alt="">
+                        </div>
+                        <div class="client-logo">
+                            <img src="img/client-logo/lineicons-logo.svg" alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section> -->
 <!-- ========================= client-logo-section end ========================= -->
 
-<!-- ========================= contact-section start ========================= -->
-<section id="contact" class="contact-section cta-bg img-bg pt-110 pb-100"
+<!-- ========================= Financial-News start ========================= -->
+<section id="news" class="contact-section cta-bg img-bg pt-110 pb-100"
     style="background-image: url('img/bg/cta-bg.jpg');">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-xl-5 col-lg-7">
                 <div class="section-title mb-60">
-                    <span class="text-white wow fadeInDown" data-wow-delay=".2s">Hey</span>
-                    <h2 class="text-white wow fadeInUp" data-wow-delay=".4s">Do you have any project in mind?</h2>
+                    <span class="text-white wow fadeInDown" data-wow-delay=".2s">NEWS</span>
+                    <h2 class="text-white wow fadeInUp" data-wow-delay=".4s"></h2>
                     <p class="text-white wow fadeInUp" data-wow-delay=".6s">At vero eos et accusamus et iusto odio
                         dignissimos ducimus quiblanditiis praesentium</p>
                 </div>
@@ -673,40 +663,38 @@
                 </div>
             </div>
             <div class="col-xl-2 offset-xl-1 col-lg-2 col-md-6">
-                <div class="footer-widget mb-60 wow fadeInUp" data-wow-delay=".4s">
-                    <h4>Quick Link</h4>
-                    <ul class="footer-links">
-                        <li>
-                            <a href="javascript:void(0)">Home</a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0)">About Us</a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0)">Service</a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0)">Contact</a>
-                        </li>
-                    </ul>
-                </div>
+                <!-- <div class="footer-widget mb-60 wow fadeInUp" data-wow-delay=".4s">
+                            <h4>Quick Link</h4>
+                            <ul class="footer-links">
+                                <li>
+                                    <a href="javascript:void(0)">Home</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">Service</a>
+                                </li> 
+                                <li>
+                                    <a href="javascript:void(0)">Contact</a>
+                                </li>
+                            </ul>
+                        </div> -->
             </div>
             <div class="col-xl-3 col-lg-3 col-md-6">
                 <div class="footer-widget mb-60 wow fadeInUp" data-wow-delay=".6s">
                     <h4>Service</h4>
                     <ul class="footer-links">
                         <li>
-                            <a href="javascript:void(0)">Marketing</a>
+                            <a href="javascript:void(0)">SIP Calculator</a>
                         </li>
                         <li>
-                            <a href="javascript:void(0)">Branding</a>
+                            <a href="javascript:void(0)">Stock Trading</a>
                         </li>
                         <li>
-                            <a href="javascript:void(0)">Web Design</a>
+                            <a href="javascript:void(0)">Expense Tracker</a>
                         </li>
-                        <li>
-                            <a href="javascript:void(0)">Graphics Design</a>
-                        </li>
+
                     </ul>
                 </div>
             </div>
@@ -741,10 +729,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <p class="wow fadeInUp" data-wow-delay=".3s">Template by <a href="https://uideck.com"
-                            rel="nofollow">UIdeck</a></p>
-                </div>
+
             </div>
         </div>
     </div>
